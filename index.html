@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="project-logo">
+            <img src="" alt="logo">
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="user-return">
+            <div class="return">
+
+                <div class="message bot-message">
+ <!-- Mock de mensagens -->
+
+<div class="avatar">🤖</div>
+    <div class="text">Olá! Como posso te ajudar com a sua atividade da faculdade hoje?</div>
+</div>
+
+<div class="message user-message">
+    <div class="text">Quero criar um front-end de chatbot incrível.</div>
+</div>
+
+<div class="message bot-message">
+    <div class="avatar">🤖</div>
+    <div class="text">Excelente! Preparei um CSS moderno, com barra de rolagem customizada e bolhas de mensagem alinhadas. O que acha?</div>
+</div>
+
+<!-- Fim do Mock de mensagens -->
+
+            </div>
+        </section>
+
+        <section class="prompt-area">
+            <div class="prompt-box">
+                <section class="prompt-area">
+                    <div class="chat-input-wrapper">
+                        <textarea class="prompt" placeholder="O que você precisa hoje?"></textarea>
+                        <button class="send-prompt">Enviar</button>
+                    </div>
+
+            <div class="support-text">
+                Esse chat pode cometer erros. Considere verificar as informações importantes.
+            </div>
+        </section>
+            </div>
+        </section>
+
+        <script>
+        const textarea = document.querySelector('.prompt');
+
+        textarea.addEventListener('input', function() {
+            this.style.height = '40px'; 
+            
+            this.style.height = this.scrollHeight + 'px';
+        });
+    </script>
+    </main>
+</body>
+</html>
